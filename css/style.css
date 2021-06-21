@@ -107,7 +107,7 @@ font-family: 'Montserrat', sans-serif;
 .about{
 
     height: auto; 
-    padding-top: 93px;
+    padding-top: 90px;
     padding-bottom: 70px;
 
 }
@@ -132,6 +132,16 @@ font-family: 'Montserrat', sans-serif;
 
 .about img{
     padding-top: 70px;
+
+}
+
+/*--------------Kontakt-----------------------*/
+
+.kontakt{
+
+    height: auto; 
+    padding-top: 150px;
+    padding-bottom: 70px;
 
 }
 
