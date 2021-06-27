@@ -72,7 +72,7 @@ include 'contactform.php'; // für E-mail-Versand
       </div>
     </nav>
     <!--alert message start -->
-    <?php echo $alert; ?>
+   
     <!--alert message end -->
 
 
