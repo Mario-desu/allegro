@@ -1,12 +1,10 @@
 <?php 
-include 'contactform.php'; // für E-mail-Versand
-// ini_set('display_startup_errors',1);
-// ini_set('display_errors',1);
-// error_reporting(E_ALL);
+include 'sendmail.php'; // für E-mail-Versand
 
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
-
+if (isset($_GET['mailsent'])) {
+  $messageSentConf = "Nachricht erfolgreich verschickt!";
+} else 
+  $messageSentConf = "Nachricht nicht verschickt!";
 ?>
 
 <!DOCTYPE html>
@@ -78,9 +76,10 @@ include 'contactform.php'; // für E-mail-Versand
 
     <!--Formular-->
     <section class="main kontakt">
-      <form method="POST" action="contactform.php" class="container">
+      <form method="POST" action="mail.php" class="container">
         <h1>Kontakt</h1>
         <br>
+        <p style="color: green;"><?php echo $messageSentConf ?></p>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">
             <b>Name</b>
